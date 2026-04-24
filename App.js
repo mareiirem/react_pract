@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import HelloWorld from './HelloWorld';
-import Counter from './Counter';
-import FilteredList from './FilteredList';
-import List from './List';
+import HelloWorld from './components/HelloWorld';
+import Counter from './components/Counter';
+import FilteredList from './components/FilteredList';
+import List from './components/List';
 
 const produce = [
     { name: "Apple", type: "Fruit" },
@@ -19,14 +19,27 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <HelloWorld />
-                <Counter />
+                <h1>React Practice App</h1>
 
-                <h2>All Items</h2>
-                <List items={produce.map(item => item.name)} />
+                <div className="section">
+                    <h2>Hello World</h2>
+                    <HelloWorld />
+                </div>
 
-                <h2>Filtered Items</h2>
-                <FilteredList items={produce} />
+                <div className="section">
+                    <h2>Counter</h2>
+                    <Counter />
+                </div>
+
+                <div className="section">
+                    <h2>All Items</h2>
+                    <List items={produce.map(item => item.name)} />
+                </div>
+
+                <div className="section">
+                    <h2>Filtered List</h2>
+                    <FilteredList items={produce} />
+                </div>
             </div>
         );
     }
