@@ -1,29 +1,53 @@
 .App {
-    text-align: center;
     font-family: Arial, sans-serif;
-    padding: 20px;
+    text-align: center;
+    padding: 30px;
+    background: #f7f8fc;
+    min-height: 100vh;
 }
 
 h1 {
-    color: #333;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 h2 {
-    margin-top: 30px;
-    color: #555;
+    margin-bottom: 15px;
+    color: #444;
 }
 
 button {
     padding: 10px 15px;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 10px;
     cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background: #4a90e2;
+    color: white;
+}
+
+button:hover {
+    background: #357ab8;
 }
 
 input, select {
     padding: 8px;
-    margin: 10px;
+    margin: 8px;
     font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
 }
 
 ul {
@@ -32,48 +56,9 @@ ul {
 }
 
 li {
-    background: #f2f2f2;
-    margin: 5px auto;
-    padding: 8px;
-    width: 200px;
-    border-radius: 5px;
-}.App {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-}
-
-h1 {
-    color: #333;
-}
-
-h2 {
-    margin-top: 30px;
-    color: #555;
-}
-
-button {
-    padding: 10px 15px;
-    font-size: 16px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-input, select {
-    padding: 8px;
-    margin: 10px;
-    font-size: 14px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    background: #f2f2f2;
-    margin: 5px auto;
-    padding: 8px;
-    width: 200px;
-    border-radius: 5px;
+    background: #f1f3f6;
+    margin: 6px auto;
+    padding: 10px;
+    width: 80%;
+    border-radius: 6px;
 }
